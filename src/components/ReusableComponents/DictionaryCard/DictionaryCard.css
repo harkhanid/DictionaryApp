@@ -1,0 +1,43 @@
+.dictionary-card{
+  margin-top: 2rem;
+  color: var(--clr-dark-500);
+}
+
+@media (min-width: 38em) {
+  .dictionary-card{
+    margin-top: 2.625rem;
+  }
+}
+
+.part-of-speech p {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-600);
+}
+
+.dictionary-card .split{
+  align-items: 'center';
+  justify-content: 'center';
+  gap: 1.2rem;
+}
+
+hr{
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid var(--clr-light-500);
+}
+
+.dictionary-card h2{
+  font-weight: var(--fw-400);
+  font-size: 1rem;
+  color: var(  --clr-light-600);
+}
+
+.meaning-title{
+  margin-top: 2rem;
+  
+}
+
+.link{
+  font-weight: var(--fw-600);
+  color: var(--clr-accent-100);
+}

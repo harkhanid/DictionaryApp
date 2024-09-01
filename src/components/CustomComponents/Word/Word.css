@@ -1,0 +1,30 @@
+.title-container{
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
+@media (min-width: 38em) {
+  .title-container{
+    margin-top: 3.25rem;
+  }
+}
+
+.title-container div:nth-child(2){
+  align-self: center;
+}
+
+.title-container p{
+  margin-top: 0.5rem;
+  color: var(--clr-accent-100);
+}
+
+.title-container img {
+  aspect-ratio: 1;
+  height: 3rem;
+}
+
+.btn{
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+}
