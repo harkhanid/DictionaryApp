@@ -7,10 +7,13 @@ const DictionaryCard = ({ meaning }) => {
         <p>{meaning.partOfSpeech}</p>
         <hr />
       </div>
-      <h2 className="meaning-title">Meaning</h2>
+      <h2 className="h2-title">Meaning</h2>
       <ul className="flow-content">
         {meaning.definitions.map((def) => (
-          <li>{def.definition}</li>
+          <li className="flow-content">
+            <p>{def.definition} </p>
+            {def.example != null && <p className="example">{def.example}</p>}
+          </li>
         ))}
       </ul>
 

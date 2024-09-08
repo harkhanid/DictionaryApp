@@ -3,21 +3,25 @@ header{
 }
 
 .gap{
-  gap: 1.8rem;
+  gap: 1rem;
 }
 
-select{
-  background: red;
-  color: white;
-  appearance: none;
-
+@media (min-width: 38em) {
+  .gap{
+    gap: 1.8rem;
+  }
 }
 
-#mac-style-select option {
-  padding: 10px;
-  background-color: #fff;
-  color: #333;
-  font-size: 16px;
+.MuiMenu-list li:nth-child(1) {
+  font-family: 'Inter' !important;
+}
+
+.MuiMenu-list li:nth-child(2) {
+  font-family: 'Lora' !important;
+}
+
+.MuiMenu-list li:nth-child(3) {
+  font-family: 'Inconsolata' !important;
 }
 
 .toggle-switch{
@@ -28,4 +32,8 @@ select{
   border-left: 1px solid var(--clr-light-500);
   flex-grow: 1;
   margin: 0;
+}
+
+.moon-img{
+  width: 20px;
 }

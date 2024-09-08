@@ -1,13 +1,16 @@
 :root{
   --clr-dark-800: #050505;
   --clr-dark-700: #1f1f1f;
+  --clr-dark-600: #3a3a3a;
   --clr-dark-500: #2d2d2d;
 
+  --clr-light-300: #fff;
   --clr-light-400: #f4f4f4;
   --clr-light-500: #e9e9e9;
   --clr-light-600: #757575;
 
   --clr-accent-100: #a445ed;
+  --clr-error-100: #ff5252;
 
   --ff-sans-serrif: "Inter";
   --ff-serrif: "Lora";
@@ -20,7 +23,27 @@
   --fs-400: 1rem;
   --fs-500: 1.125rem;
 }
-  
+
+.light{
+  --clr-background: var(--clr-light-300);
+  --clr-font-basic: var(--clr-dark-500);
+  --clr-bg-menu: var(--clr-light-300);
+  --clr-hr: var(--clr-light-500);
+  --clr-bg-input: var(--clr-light-400);
+  --clr-shadow: var(--clr-dark-600);
+}
+
+.dark{
+  --clr-background: var(--clr-dark-800);
+  --clr-font-basic: var(--clr-light-300);
+  --clr-bg-menu: var(--clr-dark-700);
+  --clr-hr: var(--clr-dark-600);
+  --clr-bg-input: var(--clr-dark-700);
+  --clr-shadow: var(--clr-accent-100);
+}
+
+
+
 @font-face {
   font-family: "Inconsolata";
   src: url("/public/fonts/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf"),
@@ -63,14 +86,20 @@ select {
   font: inherit;
 }
 
+h2{
+  font-weight: var(--fw-400);
+  font-size: 1rem;
+  color: var(  --clr-light-600);
+}
+
 
 /* Utility Classes */
 
-.sans-serrif{
+.sans{
   font-family: var(--ff-sans-serrif);
 }
 
-.serrif{
+.serif{
   font-family: var(--ff-serrif);
 }
 
@@ -83,13 +112,24 @@ select {
 }
 
 .flow-content > * + * {
-  margin-top: var(--spacer, 0.875rem)
+  margin-top: var(--spacer, 0.875rem);
 } 
 
 /* general Styling */
 
 body{
   font-size:var(--fs-400);
+}
+
+li::marker{
+  color: var(--clr-accent-100);
+}
+
+
+.outer-container{
+  background-color: var(--clr-background);
+  min-height: 100vh;
+  color:var(--clr-font-basic);
 }
 
 .container{

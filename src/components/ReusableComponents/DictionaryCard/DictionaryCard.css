@@ -1,6 +1,13 @@
 .dictionary-card{
   margin-top: 2rem;
-  color: var(--clr-dark-500);
+}
+
+.example{
+  color: #757575;
+}
+
+.example::before, .example::after{
+  content: '"';
 }
 
 @media (min-width: 38em) {
@@ -23,16 +30,12 @@
 hr{
   flex-grow: 1;
   border: none;
-  border-top: 1px solid var(--clr-light-500);
+  margin-top: 11px;
+  border-top: 1px solid var(--clr-hr);
 }
 
-.dictionary-card h2{
-  font-weight: var(--fw-400);
-  font-size: 1rem;
-  color: var(  --clr-light-600);
-}
 
-.meaning-title{
+.h2-title{
   margin-top: 2rem;
   
 }

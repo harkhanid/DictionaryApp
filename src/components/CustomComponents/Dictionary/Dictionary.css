@@ -1,0 +1,14 @@
+.source-link{
+  gap: 1rem;
+}
+
+.source-link a{
+  color: inherit;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.01px;
+}
+
+.source-link a::after{
+  margin-left: 0.5rem;
+  content: url(/public/images/icon-new-window.svg);
+}

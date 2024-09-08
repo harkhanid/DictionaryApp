@@ -1,0 +1,13 @@
+.no-word{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.no-word .emoji {
+  font-size: 4rem;
+}
+
+.no-word .title{
+  margin-top: 2rem;
+  font-weight: 700;
+}
